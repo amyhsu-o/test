@@ -38,8 +38,8 @@ def main(query_path, docs_path, language, output_path):
         query["prediction"]["content"] = answer
         query["prediction"]["references"] = [retrieved_chunks[0]['page_content']]
 
-    save_jsonl(output_path, queries)
-    print("Predictions saved at '{}'".format(output_path))
+    # save_jsonl(output_path, queries)
+    # print("Predictions saved at '{}'".format(output_path))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
